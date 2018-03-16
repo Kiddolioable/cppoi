@@ -16,9 +16,11 @@
   </head>
 
   <body>
-    {% include 'templates/navbar.twig' %}
+    <div class="navbar">
+      {% include 'templates/navbar.html' %}
+    </div>
 
-    <div class="container">
+    <div class="content">
       {% block content %} {% endblock %}
     </div>
   </body>
