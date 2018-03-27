@@ -1,0 +1,20 @@
+{% extends 'templates/app.html' %}
+
+{% block content %}
+  <!-- Accounts Table -->
+  <div class="table-container">
+    <table onload='test()' class="pure-table" id="table-accounts">
+        <thead>
+            <tr>
+                <th> id_acc </th>
+            </tr>
+        </thead>
+
+        <tbody data-bind="foreach: accounts">
+            <tr class="pure-table-odd">
+                <td data-bind="text: id_acc"></td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+{% endblock %}
